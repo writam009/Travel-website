@@ -1,0 +1,54 @@
+html{
+    font-size: 72%;
+}
+body{
+    margin: 0;
+    font-family: 'Poppins';
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    margin: 4em;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 4em;
+    margin: 0;
+}
+p{
+    display: flex;
+    gap: 10rem;
+    margin-top: 11em;
+    font-size: 2rem;
+    color: #fff;
+
+}
+@keyframes reveal{
+    from{
+        transform: scaleY(1);
+    }
+    to{
+        transform: scaleY(0);
+    }
+}
+p{
+    animation: growIn 2s cubic-bezier(0.075,0.82,0.165,1) forwards;
+    transform: scale(.4);
+}
+@keyframes growIn{
+    to{
+        transform: scale(1);
+    }
+    
+}
+
+li{
+    color: #fff;
+}
+body.background{
+    position: relative;
+}
